@@ -5,14 +5,17 @@
   "description": "Pizzeria web application built with Next.js 14",
   "author": "Rigander",
   "license": "CC0-1.0",
-
   "dependencies": {
     "next": "14.2.24",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "zustand": "^5.0.3"
   },
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "devDependencies": {
     "eslint": "^9.21.0"
