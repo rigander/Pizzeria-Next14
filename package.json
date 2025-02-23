@@ -6,5 +6,8 @@
   },
   "scripts": {
     "dev": "next dev"
+  },
+  "devDependencies": {
+    "eslint": "^9.21.0"
   }
 }
