@@ -1,6 +1,13 @@
 body{
-    background-color: #6c8c6c;
-    color: #ecc253;
-    font-size: 37px;
-    font-family: "Calibri Light", sans-serif;
+    background-color: #fdbd9b;
+    margin: 31px 30px;
+}
+.main-wrapper{
+    margin: 0 auto;
+    padding: 44px 67px 0 67px;
+    width: 1380px;
+    height: 1453px;
+    border: none;
+    border-radius: 30px;
+    background-color: #FFFFFF;
 }
