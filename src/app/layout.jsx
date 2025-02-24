@@ -1,15 +1,11 @@
 import './global.css'
-
+import Layout from "../modules/Layout";
 function RootLayout({ children }) {
     return (
         <html lang="en">
-        <body>
-        <div className='main-wrapper'>
-
-            {children}
-
-        </div>
-        </body>
+            <body>
+                <Layout>{children}</Layout>
+            </body>
         </html>
     )
 }
