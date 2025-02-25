@@ -1,5 +1,5 @@
-import './global.css'
-import Layout from "../modules/Layout";
+import '@/app/global.css'
+import Layout from "@/modules/Layout";
 function RootLayout({ children }) {
     return (
         <html lang="en">
