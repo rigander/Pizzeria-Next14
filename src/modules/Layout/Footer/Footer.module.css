@@ -1,0 +1,10 @@
+.footer{
+    width: 1380px;
+    height: 60px;
+    background-color: #FFFFFF;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom: 1px solid #EDEDED;
+    box-sizing: border-box;
+    margin: 0 auto;
+}

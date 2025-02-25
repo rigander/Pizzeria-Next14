@@ -1,0 +1,10 @@
+.header{
+    width: 1380px;
+    height: 137px;
+    background-color: #FFFFFF;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom: 1px solid #EDEDED;
+    box-sizing: border-box;
+    margin: 0 auto;
+}

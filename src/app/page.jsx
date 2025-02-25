@@ -1,6 +1,8 @@
 function HomePage() {
     return(
-        <div>Welcome to Pizzeria!</div>
+        <div>
+
+        </div>
     )
 }
 export default HomePage
