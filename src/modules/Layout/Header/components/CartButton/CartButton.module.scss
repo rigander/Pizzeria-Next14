@@ -1,0 +1,36 @@
+.cartButton {
+  height: 50px;
+  width: 50px;
+  border: 1px solid #FE5F00;
+  border-radius: 15px;
+  background-color: #fdfdfe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    background-color: #FE5F00;
+    border-color: #FE5F00;
+    box-shadow: 0px 5px 12px rgba(254, 95, 0, 0.3);
+
+    .shoppingCart {
+      color: #fff;
+      transform: scale(1.1);
+    }
+  }
+
+  &:active {
+    transform: scale(0.95);
+    background-color: #D94C00;
+    border-color: #D94C00;
+    box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .shoppingCart {
+    color: #FE5F00;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+}
