@@ -1,4 +1,4 @@
-import styles from './Input.module.css';
+import styles from './Input.module.scss';
 import React, { forwardRef } from 'react';
 
 const Input = React.forwardRef(({ value, onChange, placeholder, type = 'text', className = '', ...props }, ref) => {

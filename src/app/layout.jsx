@@ -1,4 +1,4 @@
-import '@/app/global.css'
+import '@/app/global.scss'
 import Layout from "@/modules/Layout";
 function RootLayout({ children }) {
     return (

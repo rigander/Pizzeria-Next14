@@ -3,7 +3,7 @@
 import React, {useState} from "react";
 import Input from "@/modules/UI/Input";
 import { Search } from 'lucide-react';
-import styles from './SearchInput.module.css';
+import styles from './SearchInput.module.scss';
 
 function SearchInput() {
     const [query, setQuery] = useState("");
