@@ -1,10 +1,15 @@
-
+.searchWrapper{
+    height: 50px;
+    width: 764px;
+    margin-left: 40px;
+}
 .inputWrapper{
     position: relative;
+    width: 764px;
 }
 .searchInput{
     height: 50px;
-    width: 764px;
+    width: 714px;
     border-radius: 15px;
     border: none;
     background-color: #F9F9F9;

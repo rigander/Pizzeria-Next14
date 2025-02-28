@@ -8,10 +8,10 @@ function Header() {
 
     return(
         <header className={styles.header}>
-            <Logo />
-            <SearchInput />
-            <LoginButton />
-            <CartButton />
+            <div className={styles.headerContent}><Logo/>
+                <SearchInput/>
+                <LoginButton/>
+                <CartButton/></div>
         </header>
     )
 }
