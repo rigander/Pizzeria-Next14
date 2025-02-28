@@ -2,7 +2,7 @@
 
 import React, {useState} from "react";
 import Input from "@/modules/UI/Input";
-import { Search } from 'lucide-react';
+import { Search, X } from 'lucide-react';
 import styles from './SearchInput.module.scss';
 
 function SearchInput() {
@@ -19,6 +19,7 @@ function SearchInput() {
                     onChange={(e) => setQuery(e.target.value)}
                     placeholder="Поиск пиццы..."
                 />
+                <X className={styles.clear} />
             </div>
         </div>
     )

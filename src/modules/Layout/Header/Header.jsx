@@ -11,7 +11,8 @@ function Header() {
             <div className={styles.headerContent}><Logo/>
                 <SearchInput/>
                 <LoginButton/>
-                <CartButton/></div>
+                <CartButton/>
+            </div>
         </header>
     )
 }
