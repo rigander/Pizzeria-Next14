@@ -1,8 +1,12 @@
+import React from "react";
+import MainPageContent from "@/modules/MainPageContent";
+
+
 function HomePage() {
     return(
-        <div>
-
-        </div>
+        <>
+            <MainPageContent />
+        </>
     )
 }
 export default HomePage

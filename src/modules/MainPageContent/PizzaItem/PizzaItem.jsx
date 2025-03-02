@@ -17,8 +17,10 @@ function PizzaItem(pizza){
             />
             <PizzaTitle title={pizza.title} />
             <PizzaDescription description={pizza.description} />
-            <PizzaPrice price={pizza.price}/>
-            <PizzaActions />
+            <div className={styles.price_actions}>
+                <PizzaPrice price={pizza.price}/>
+                <PizzaActions/>
+            </div>
         </div>
     );
 }
