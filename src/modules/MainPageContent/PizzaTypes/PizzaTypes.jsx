@@ -1,3 +1,4 @@
+"use client"
 import React, {useState, useEffect} from "react";
 import styles from './PizzaTypes.module.scss'
 
@@ -6,10 +7,11 @@ function PizzaTypes() {
     const [types, setTypes] = useState([]);
     const [activeType, setActiveType] = useState({ id: "all", name: "Все пиццы" });
 
+
     useEffect(() => {
         const fetchTypes = async () => {
             try {
-                const response = await fetch("/api/pizza-types");
+                const response = await fetch("http://api.pizza-store.com/api/categories");
                 const data = await response.json();
                 setTypes([{ id: "all", name: "Все пиццы" }, ...data]);
             } catch (error) {
@@ -22,7 +24,7 @@ function PizzaTypes() {
 
     const handleSelect = (type) => {
         setActiveType(type);
-        onSelectType(type);
+        if (onSelectType) onSelectType(type);
     };
 
     return(
