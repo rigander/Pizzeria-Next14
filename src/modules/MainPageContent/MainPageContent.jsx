@@ -1,12 +1,12 @@
 import styles from "./MainPageContent.module.scss";
+import Categories from "src/modules/MainPageContent/Categories";
 import PizzaList from "@/modules/MainPageContent/PizzaList";
-import PizzaTypes from "@/modules/MainPageContent/PizzaTypes";
 import PizzaFilter from "src/modules/MainPageContent/PizzaFilter";
 
 function MainPageContent() {
     return (
         <div className={styles.mainContent_Container}>
-            <PizzaTypes />
+            <Categories />
             <PizzaFilter />
             <PizzaList />
         </div>
