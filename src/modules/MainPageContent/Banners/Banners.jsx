@@ -22,22 +22,25 @@ export default function Banners() {
             <Swiper
                 modules={[Pagination, Navigation, Autoplay]}
                 spaceBetween={15}
-                slidesPerView={3}
+                slidesPerView={1}
                 pagination={{ type: "fraction" }}
                 autoplay={{ delay: 3000, disableOnInteraction: false }}
                 loop={true}
-                style={{ width: "100%", height: "240px" }}
+                style={{ width: "100%", height: "100%" }}
             >
                 {banners.map((image, index) => (
-                    <SwiperSlide key={index}>
-                            <Image
-                            width={600}
-                            height={240}
-                            src={image.src}
-                            alt={image.alt}
-                            priority={isMounted && index === 0}
-                            loading={isMounted && index === 0 ? "eager" : "lazy"}
-                            />
+                    <SwiperSlide key={index} className={styles.slide}>
+                        <div className={styles.image_wrapper}>
+                            {isMounted && (
+                                <Image
+                                    src={image.src}
+                                    alt={image.alt}
+                                    fill={true}
+                                    priority={index === 0}
+                                    loading={index === 0 ? "eager" : "lazy"}
+                                />
+                            )}
+                        </div>
                     </SwiperSlide>
                 ))}
             </Swiper>
