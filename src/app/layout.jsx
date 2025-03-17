@@ -4,9 +4,11 @@ function RootLayout({ children }) {
     return (
         <html lang="en">
             <body>
-                <Layout>{children}</Layout>
+                <div className="app-wrapper">
+                    <Layout>{children}</Layout>
+                </div>
             </body>
         </html>
-    )
+    );
 }
-export default RootLayout
+export default RootLayout;

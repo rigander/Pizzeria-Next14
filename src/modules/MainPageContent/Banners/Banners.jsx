@@ -1,49 +1,32 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import styles from "./Banners.module.scss";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import React from "react";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from 'embla-carousel-autoplay'
 import Image from "next/image";
+import styles from "./Banners.module.scss";
 import { banners } from "@/modules/MainPageContent/Banners/lib/images";
 
 export default function Banners() {
-    const [isMounted, setIsMounted] = useState(false);
-
-    useEffect(() => {
-        setIsMounted(true);
-    }, []);
+    const [emblaRef] = useEmblaCarousel({loop: true}, [Autoplay()]);
 
     return (
-        <div className={styles.banners}>
-            <Swiper
-                modules={[Pagination, Navigation, Autoplay]}
-                spaceBetween={15}
-                slidesPerView={1}
-                pagination={{ type: "fraction" }}
-                autoplay={{ delay: 3000, disableOnInteraction: false }}
-                loop={true}
-                style={{ width: "100%", height: "100%" }}
-            >
+        <div className={styles.embla} ref={emblaRef}>
+            <div className={styles.embla__container}>
                 {banners.map((image, index) => (
-                    <SwiperSlide key={index} className={styles.slide}>
-                        <div className={styles.image_wrapper}>
-                            {isMounted && (
-                                <Image
-                                    src={image.src}
-                                    alt={image.alt}
-                                    fill={true}
-                                    priority={index === 0}
-                                    loading={index === 0 ? "eager" : "lazy"}
-                                />
-                            )}
-                        </div>
-                    </SwiperSlide>
+                    <div key={index} className={styles.embla__slide}>
+                        <Image
+                            src={image.src}
+                            alt={image.alt}
+                            fill
+                            style={{ objectFit: "cover" }}
+                            priority={index === 0}
+                            loading={index === 0 ? "eager" : "lazy"}
+                        />
+                    </div>
                 ))}
-            </Swiper>
+            </div>
         </div>
     );
 }
+

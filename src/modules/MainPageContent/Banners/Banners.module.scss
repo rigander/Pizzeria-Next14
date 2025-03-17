@@ -1,19 +1,14 @@
-.banners {
-  width: 100%;
-  height: 250px;
-
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  img {
-    object-fit: cover;
-  }
+.embla {
+  overflow: hidden;
 }
-.image_wrapper {
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
   position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  overflow: hidden;}
+  min-width: 100%;
+  height: 300px;
+}
+

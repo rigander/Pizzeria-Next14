@@ -16,8 +16,12 @@
     font-weight: 900;
     font-style: normal;
 }
-body{
+.app-wrapper{
     background-color: #fdbd9b;
-    margin: 31px 30px;
+    padding: 31px 30px;
     font-family: Nunito, sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
 }
